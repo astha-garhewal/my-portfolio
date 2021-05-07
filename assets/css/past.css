@@ -1,0 +1,481 @@
+/*----------------------------------------------------
+@File: Default Styles
+@Author: SPONDON IT
+
+This file contains the styling for the actual theme, this
+is the file you need to edit to change the look of the
+theme.
+---------------------------------------------------- */
+/*=====================================================================
+@Template Name: HostHub Construction 
+@Developed By: Naim Lasker
+Author E-mail: naimlasker@gmail.com
+
+=====================================================================*/
+/*----------------------------------------------------*/
+/*font Variables*/
+/*Color Variables*/
+/*=================== fonts ====================*/
+@import url("https://fonts.googleapis.com/css?family=Rajdhani:400,600|Roboto:400,500,500i");
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+/* Medium Layout: 1280px */
+/* Tablet Layout: 768px */
+/* Mobile Layout: 320px */
+/* Wide Mobile Layout: 480px */
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+body {
+  line-height: 24px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #777777;
+}
+
+h3,
+h6 {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+
+/* Main Title Area css
+============================================================================================ */
+
+/* End Main Title Area css
+============================================================================================ */
+/* Start Gradient Area css
+============================================================================================ */
+.recent_update_inner .nav.nav-tabs li a.active,
+.recent_update_inner .nav.nav-tabs li a:hover,
+.common_style .line:after {
+  background: -webkit-linear-gradient(90deg, #8252fa 0%, #eca2f1 100%);
+  background: -moz-linear-gradient(90deg, #8252fa 0%, #eca2f1 100%);
+  background: -o-linear-gradient(90deg, #8252fa 0%, #eca2f1 100%);
+  background: linear-gradient(90deg, #8252fa 0%, #eca2f1 100%);
+}
+
+.recent_update_inner .nav.nav-tabs li a span.lnr {
+  background: -webkit-linear-gradient(90deg, #8252fa 0%, #eca2f1 100%);
+  background: -moz-linear-gradient(90deg, #8252fa 0%, #eca2f1 100%);
+  background: -o-linear-gradient(90deg, #8252fa 0%, #eca2f1 100%);
+  background: linear-gradient(90deg, #8252fa 0%, #eca2f1 100%);
+  -webkit-text-fill-color: transparent;
+}
+
+/* End Gradient Area css
+============================================================================================ */
+.primary_btn {
+  display: inline-block;
+  color: #22195e;
+  letter-spacing: 1px;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 47px;
+  outline: none !important;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: double 2px transparent;
+  border-radius: 5px;
+  background-image: linear-gradient(white, white),
+    radial-gradient(circle at top left, #8252fa, #eca2f1);
+  background-image: -webkit-linear-gradient(white, white),
+    -webkit-radial-gradient(circle at top left, #8252fa, #eca2f1);
+  background-image: -moz-linear-gradient(white, white),
+    -moz-radial-gradient(circle at top left, #8252fa, #eca2f1);
+  background-image: -ms-linear-gradient(white, white),
+    -ms-radial-gradient(circle at top left, #8252fa, #eca2f1);
+  background-image: -o-linear-gradient(white, white),
+    -o-radial-gradient(circle at top left, #8252fa, #eca2f1);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+.primary_btn span {
+  padding: 0 35px;
+}
+.primary_btn:hover {
+  background-image: linear-gradient(to right, #8252fa 0%, #eca2f1 100%),
+    radial-gradient(circle at top left, #8252fa, #eca2f1);
+  background-image: -webkit-linear-gradient(to right, #8252fa 0%, #eca2f1 100%),
+    -webkit-radial-gradient(circle at top left, #8252fa, #eca2f1);
+  background-image: -moz-linear-gradient(to right, #8252fa 0%, #eca2f1 100%),
+    -moz-radial-gradient(circle at top left, #8252fa, #eca2f1);
+  background-image: -ms-linear-gradient(to right, #8252fa 0%, #eca2f1 100%),
+    -ms-radial-gradient(circle at top left, #8252fa, #eca2f1);
+  background-image: -o-linear-gradient(to right, #8252fa 0%, #eca2f1 100%),
+    -o-radial-gradient(circle at top left, #8252fa, #eca2f1);
+  color: #fff;
+  box-shadow: 0px 10px 30px rgba(130, 82, 250, 0.2);
+  border: 2px solid transparent;
+}
+
+/* Start Video Play css
+============================================================================================ */
+/* End Video Play css
+============================================================================================ */
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+/* Home Banner Area css
+============================================================================================ */
+
+/* End Home Banner Area css
+============================================================================================ */
+/* Start Common Banner Area css
+============================================================================================ */
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+/* Latest Blog Area css
+============================================================================================ */
+/* End Latest Blog Area css
+============================================================================================ */
+
+/* Causes Area css
+============================================================================================ */
+
+/* End Causes Area css
+============================================================================================ */
+/*================= latest_blog_area css =============*/
+
+/*========= blog_categorie_area css ===========*/
+
+/*============ blog_left_sidebar css ==============*/
+
+/*============ Start Blog Single Styles  =============*/
+
+/*============ End Blog Single Styles  =============*/
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+/* Home Map Area css
+============================================================================================ */
+
+/* End Home Map Form Area css
+============================================================================================ */
+/* Reservation Form Area css
+============================================================================================ */
+
+/* End Reservation Form Area css
+============================================================================================ */
+/*============== contact_area css ================*/
+
+/* Contact Success and error Area css
+============================================================================================ */
+
+/* End Contact Success and error Area css
+============================================================================================ */
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+/*============== Elements Area css ================*/
+
+/*============== End Elements Area css ================*/
+/*==============Elements Button Area css ================*/
+
+/*==============End Elements Button Area css ================*/
+/* =================================== */
+/*  Elements Page Styles
+/* =================================== */
+/*---------- Start Elements Page -------------*/
+
+/*---------- End Elements Page -------------*/
+
+h3 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+/* Start Features Area css
+============================================================================================ */
+
+/* End Features Area css
+============================================================================================ */
+/* Recent Update Area css
+============================================================================================ */
+.recent_update_area {
+  background-image: url(../img/tab-bg.jpg);
+  background-size: cover;
+  padding: 290px 0;
+}
+
+.recent_update_inner .nav.nav-tabs {
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  border-bottom: 1px solid #eda2f0;
+  padding-bottom: 1px;
+}
+.recent_update_inner .nav.nav-tabs li {
+  flex: 0 0 25%;
+  max-width: 195px;
+  padding: 0px 15px;
+}
+.recent_update_inner .nav.nav-tabs li a {
+  border: none;
+  padding: 25px 0px;
+  background: #fff;
+  text-align: center;
+  line-height: 60px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #000000;
+}
+.recent_update_inner .nav.nav-tabs li a span.lnr {
+  font-size: 30px;
+  font-weight: 600;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+.recent_update_inner .nav.nav-tabs li a.active,
+.recent_update_inner .nav.nav-tabs li a:hover {
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+.recent_update_inner .nav.nav-tabs li a.active span.lnr,
+.recent_update_inner .nav.nav-tabs li a:hover span.lnr {
+  background: -webkit-linear-gradient(90deg, #fff, #fff);
+  background: -moz-linear-gradient(90deg, #fff, #fff);
+  background: -o-linear-gradient(90deg, #fff, #fff);
+  background: linear-gradient(90deg, #fff, #fff);
+  -webkit-text-fill-color: transparent;
+}
+.recent_update_inner .nav.nav-tabs li h6 {
+  letter-spacing: 1px;
+  margin-top: -10px;
+  margin-bottom: 0;
+}
+.recent_update_inner .tab-content .tab-pane {
+  border: none;
+  padding-top: 80px;
+}
+
+.common_style .line {
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.common_style .line:after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 50px;
+  content: "";
+}
+.common_style h3 {
+  font-size: 36px;
+  color: #222222;
+  font-family: "Rajdhani", sans-serif;
+  margin-bottom: 20px;
+}
+.common_style p {
+  margin: 0;
+}
+.common_style .primary_btn {
+  margin-top: 35px;
+}
+
+/* Recent Update Area css
+============================================================================================ */
+/* Start Big Features Area css
+============================================================================================ */
+
+.features_content {
+  position: relative;
+}
+.features_content .border-line {
+  position: absolute;
+  left: 50%;
+  height: 100%;
+  border: 1px dashed #dbdade;
+}
+.features_content .shape1 {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  margin-left: -8px;
+}
+.features_content .shape2 {
+  position: absolute;
+  left: 48%;
+  top: 47%;
+  margin-left: -15px;
+}
+.features_content .shape3 {
+  position: absolute;
+  left: 50%;
+  top: 62%;
+  margin-left: -9px;
+}
+
+.bottom-features {
+  margin-top: 120px;
+}
+.bottom-features .shape3 {
+  top: 64%;
+}
+
+/* End Big Features Area css
+============================================================================================ */
+/* Price Area css
+============================================================================================ */
+
+/* End Price Area css
+============================================================================================ */
+/* Start Testimonial Area css
+============================================================================================ */
+
+/* End Testimonial Area css
+============================================================================================ */
+/* Start Brand Area css
+============================================================================================ */
+
+/* End Brand Area css
+============================================================================================ */
+/* Impress Area css
+============================================================================================ */
+
+/* End Impress Area css
+============================================================================================ */
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+@media (max-width: 1619px) {
+  /* Main Menu Area css
+  ============================================================================================ */
+
+  /* End Main Menu Area css
+  ============================================================================================ */
+}
+@media (max-width: 1199px) {
+  /* Main Menu Area css
+  ============================================================================================ */
+
+  /* End Main Menu Area css
+  ============================================================================================ */
+  /* Home Banner Area css
+  ============================================================================================ */
+
+  /* End Home Banner Area css
+  ============================================================================================ */
+}
+@media (max-width: 991px) {
+  /* Main Menu Area css
+  ============================================================================================ */
+
+  .nav {
+    padding: 0px 0px;
+  }
+
+  /* End Main Menu Area css
+  ============================================================================================ */
+  /* Start Home banner Area css
+  ============================================================================================ */
+
+  /* Recent Update Area css
+  ============================================================================================ */
+  .recent_update_area {
+    padding: 80px 0;
+    background-image: none;
+    background-color: #fcf8ff;
+  }
+
+  .recent_update_inner li a {
+    min-width: 110px;
+  }
+
+  /* Start Big Features Area css
+  ============================================================================================ */
+
+  /* Price Area css
+  ============================================================================================ */
+
+  /* Start Testimonial Area css
+  ============================================================================================ */
+
+  /* Impress Area css
+  ============================================================================================ */
+
+  /* Footer Area css
+  ============================================================================================ */
+
+  /* Blog page Area css
+  ============================================================================================ */
+
+  /* End Blog page Area css
+  ============================================================================================ */
+  /* Contact Page Area css
+  ============================================================================================ */
+
+  /* End Contact page Area css
+  ============================================================================================ */
+
+  /* Footer Area css
+  ============================================================================================ */
+
+  /* End End Footer Area css
+  ============================================================================================ */
+}
+@media (max-width: 767px) {
+  /* Start Features Area css
+  ============================================================================================ */
+
+  /* Recent Update Area css
+  ============================================================================================ */
+  .recent_update_inner li a {
+    min-width: 110px;
+  }
+
+  /* End End Footer Area css
+  ============================================================================================ */
+}
+@media (max-width: 575px) {
+  /*Recent Update Area css
+  ============================================================================================ */
+  .recent_update_inner li h6 {
+    font-size: 12px;
+  }
+
+  /* End End Footer Area css
+  ============================================================================================ */
+}
+@media (max-width: 480px) {
+  /* End Blog Page Area css
+  ============================================================================================ */
+}
+@media (max-width: 420px) {
+  /* Recent Update Area css
+  ============================================================================================ */
+  .recent_update_inner li:last-child {
+    margin-top: 20px;
+  }
+}

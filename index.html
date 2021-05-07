@@ -1,635 +1,1516 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-  <title>My Portfolio</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <!-- Libs CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="assets/libs/%40fancyapps/fancybox/dist/jquery.fancybox.min.css"
+    />
+    <link rel="stylesheet" href="assets/libs/aos/dist/aos.css" />
 
+    <script src="assets/js/demo.min.js"></script>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/home.css" />
 
-  <!-- Vendor CSS Files -->
-  <link href="css/aos.css" rel="stylesheet">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/swiper-bundle.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Astha Garhewal | Portfolio</title>
 
+    
+  </head>
+  <body>
+    <!-- MODALS -->
+    <!-- Sign in -->
+    <div
+      class="modal fade"
+      id="modalSignIn"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalSignInHeading"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <!-- Close -->
+            <button
+              class="modal-close close"
+              data-dismiss="modal"
+              type="button"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">
+                <i class="fe fe-x"></i>
+              </span>
+            </button>
 
+            <!-- Heading -->
+            <h1 class="mb-4" id="modalSignInHeading">Sign In</h1>
 
-  <!-- Template Main CSS File -->
-  <link href="css/style.css" rel="stylesheet">
-  <style>
-    #w-node-_3b6037ba-146a-d164-f20e-69666ecd1dcb-2d85b1e5 {
-        -ms-grid-row: 1;
-        grid-row-start: 1;
-        -ms-grid-row-span: 1;
-        grid-row-end: 2;
-        -ms-grid-column: 1;
-        grid-column-start: 1;
-        -ms-grid-column-span: 1;
-        grid-column-end: 2;
-    }
-    #w-node-_55e888ff-8c73-32f7-4cae-db633b80f872-2d85b1e5 {
-        -ms-grid-row: 1;
-        grid-row-start: 1;
-        -ms-grid-row-span: 2;
-        grid-row-end: 3;
-        -ms-grid-column: 2;
-        grid-column-start: 2;
-        -ms-grid-column-span: 2;
-        grid-column-end: 4;
-    }
-    #w-node-_1304f47f-cc25-3958-c9e9-af60c4f21a38-2d85b1e5 {
-        -ms-grid-row: 2;
-        grid-row-start: 2;
-        -ms-grid-row-span: 1;
-        grid-row-end: 3;
-        -ms-grid-column: 1;
-        grid-column-start: 1;
-        -ms-grid-column-span: 1;
-        grid-column-end: 2;
-    }
-    #w-node-a224dd0d-82a0-d7bf-f553-f2d461676e1a-2d85b1e5 {
-        -ms-grid-row: 3;
-        grid-row-start: 3;
-        -ms-grid-row-span: 2;
-        grid-row-end: 5;
-        -ms-grid-column: 1;
-        grid-column-start: 1;
-        -ms-grid-column-span: 1;
-        grid-column-end: 2;
-    }
-    #w-node-abe99020-d716-dad6-02f0-30d16c33235a-2d85b1e5 {
-        -ms-grid-row: 3;
-        grid-row-start: 3;
-        -ms-grid-row-span: 3;
-        grid-row-end: 6;
-        -ms-grid-column: 3;
-        grid-column-start: 3;
-        -ms-grid-column-span: 1;
-        grid-column-end: 4;
-    }
-    #w-node-_756b7e42-4d12-1cf1-239d-bb6c702cb5c2-2d85b1e5 {
-        -ms-grid-row: 3;
-        grid-row-start: 3;
-        -ms-grid-row-span: 1;
-        grid-row-end: 4;
-        -ms-grid-column: 2;
-        grid-column-start: 2;
-        -ms-grid-column-span: 1;
-        grid-column-end: 3;
-    }
-    #w-node-_8b05d633-7817-9483-0f71-aa714a5c09ad-2d85b1e5 {
-        -ms-grid-row: 4;
-        grid-row-start: 4;
-        -ms-grid-row-span: 1;
-        grid-row-end: 5;
-        -ms-grid-column: 2;
-        grid-column-start: 2;
-        -ms-grid-column-span: 1;
-        grid-column-end: 3;
-    }
-    #w-node-_8be84687-f0ad-8a6f-ac58-b6bb52dd8268-2d85b1e5 {
-        -ms-grid-column-span: 2;
-        grid-column-end: 3;
-        -ms-grid-column: 1;
-        grid-column-start: 1;
-        -ms-grid-row-span: 1;
-        grid-row-end: 6;
-        -ms-grid-row: 5;
-        grid-row-start: 5;
-    }
-    @media screen and (max-width: 991px) {
-        #w-node-_3b6037ba-146a-d164-f20e-69666ecd1dcb-2d85b1e5 {
-            -ms-grid-row: 1;
-            grid-row-start: 1;
-            -ms-grid-row-span: 1;
-            grid-row-end: 2;
-            -ms-grid-column: 1;
-            grid-column-start: 1;
-            -ms-grid-column-span: 1;
-            grid-column-end: 2;
-        }
-        #w-node-_55e888ff-8c73-32f7-4cae-db633b80f872-2d85b1e5 {
-            -ms-grid-row: 1;
-            grid-row-start: 1;
-            -ms-grid-row-span: 2;
-            grid-row-end: 3;
-            -ms-grid-column: 2;
-            grid-column-start: 2;
-            -ms-grid-column-span: 1;
-            grid-column-end: 3;
-        }
-        #w-node-a224dd0d-82a0-d7bf-f553-f2d461676e1a-2d85b1e5 {
-            -ms-grid-row: 3;
-            grid-row-start: 3;
-            -ms-grid-row-span: 1;
-            grid-row-end: 4;
-            -ms-grid-column: 1;
-            grid-column-start: 1;
-            -ms-grid-column-span: 1;
-            grid-column-end: 2;
-        }
-        #w-node-abe99020-d716-dad6-02f0-30d16c33235a-2d85b1e5 {
-            -ms-grid-row: 3;
-            grid-row-start: 3;
-            -ms-grid-row-span: 2;
-            grid-row-end: 5;
-            -ms-grid-column: 2;
-            grid-column-start: 2;
-            -ms-grid-column-span: 1;
-            grid-column-end: 3;
-        }
-        #w-node-_756b7e42-4d12-1cf1-239d-bb6c702cb5c2-2d85b1e5 {
-            -ms-grid-row: 6;
-            grid-row-start: 6;
-            -ms-grid-row-span: 1;
-            grid-row-end: 7;
-            -ms-grid-column: 1;
-            grid-column-start: 1;
-            -ms-grid-column-span: 2;
-            grid-column-end: 3;
-        }
-        #w-node-_8b05d633-7817-9483-0f71-aa714a5c09ad-2d85b1e5 {
-            -ms-grid-row: 5;
-            grid-row-start: 5;
-            -ms-grid-row-span: 1;
-            grid-row-end: 6;
-            -ms-grid-column: 2;
-            grid-column-start: 2;
-            -ms-grid-column-span: 1;
-            grid-column-end: 3;
-        }
-        #w-node-_8be84687-f0ad-8a6f-ac58-b6bb52dd8268-2d85b1e5 {
-            -ms-grid-column-span: 1;
-            grid-column-end: 2;
-            -ms-grid-column: 1;
-            grid-column-start: 1;
-            -ms-grid-row-span: 2;
-            grid-row-end: 6;
-            -ms-grid-row: 4;
-            grid-row-start: 4;
-        }
-    }
-</style>
+            <!-- Text -->
+            <p>Don’t have an account? <a href="sign-up.html">Sign up</a></p>
 
-</head>
-
-<body>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center">
-    <div class="container d-flex align-items-center justify-content-between">
-
-      <div class="logo">
-        <h1><a href="index.html"><span>A</span>stha</a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-      </div>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
-            
-      
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h5 data-aos="rotate-c" data-aos-duration="1000" data-aos-easing="ease-in-sine">HEY! &#128516 I AM </h5>
-          <h1 data-aos="fade-right"><span>Astha Garhewal</span></h1>
-          <h2 data-aos="fade-left" data-aos-delay="400">I am a <span
-            class="txt-rotate"
-            data-period="2000"
-            data-rotate='[ "Web Developer.", "Web Designer.",  "Machine Learning Fancier." ]'></span></h2>
-        </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
-          <img src="img/hero.gif" class="img-fluid animated" alt="">
-
-        </div>
-      </div>
-    </div>
-
-  </section><!-- End Hero -->
-
-<!-- ======= About Section ======= -->
-<section id="about" class="about">
-  <div class="container">
-
-    <div class="row">
-      <div class="col-lg-6">
-        <img data-aos="flip-right" data-aos-delay="200" src="img/about-img.png" class="img-fluid" alt="">
-      </div>
-      <div class="col-lg-6 pt-4 pt-lg-0 content">
-        <h3 data-aos="rotate-c" data-aos-duration="1000" data-aos-easing="ease-in-sine">About Me</h3>
-        <p data-aos="fade-left">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua.
-        </p>
-        <ul data-aos="fade-left">
-          <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-          <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
-          <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda</li>
-        </ul>
-        <p data-aos="fade-left">
-          Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-          velit esse cillum dolore eu fugiat nulla pariatur.
-        </p>
-      </div>
-    </div>
-
-  </div>
-</section><!-- End About Section -->
-  
-<!--================My Tabs Area =================-->
-<section class="mytabs_area p_120">
-  <div class="container">
-    <div class="tabs_inner">
-  <ul class="nav nav-tabs" id="myTab" role="tablist">
-    <li class="nav-item">
-      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">My Experiences</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">My Education</a>
-    </li>
-  </ul>
-  <div class="tab-content" id="myTabContent">
-    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-      <ul class="list">
-        <li>
-          <span></span>
-          <div class="media">
-            <div class="d-flex">
-              <p data-aos="fade-right">March 2017 to present</p>
-            </div>
-            <div class="media-body" data-aos="fade-left">
-              <h4>Colorlib</h4>
-              <p>Senior Web Developer <br />Santa monica, Los angeles</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <span></span>
-          <div class="media">
-            <div class="d-flex">
-              <p data-aos="fade-right" data-aos-delay="500s">March 2017 to present</p>
-            </div>
-            <div class="media-body" data-aos="fade-left" data-aos-delay="500s">
-              <h4>Colorlib</h4>
-              <p>Senior Web Developer <br />Santa monica, Los angeles</p>
-            </div>
-          </div>
-        </li>
-        <li>
-        <span></span>
-          <div class="media">
-            <div class="d-flex">
-              <p data-aos="fade-right" data-aos-delay="1000s">March 2017 to present</p>
-            </div>
-            <div class="media-body" data-aos="fade-left" data-aos-delay="1000s">
-              <h4>Colorlib</h4>
-              <p>Senior Web Developer <br />Santa monica, Los angeles</p>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-      <ul class="list">
-        <li>
-          <span></span>
-          <div class="media">
-            <div class="d-flex">
-              <p data-aos="fade-right">March 2017 to present</p>
-            </div>
-            <div class="media-body" data-aos="fade-left">
-              <h4>Colorlib</h4>
-              <p>ju Web Developer <br />Santa monica, Los angeles</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <span></span>
-          <div class="media">
-            <div class="d-flex" data-aos="fade-right" data-aos-delay="500s">
-              <p>March 2017 to present</p>
-            </div>
-            <div class="media-body" data-aos="fade-left" data-aos-delay="500s">
-              <h4>Colorlib</h4>
-              <p>Senior Web Developer <br />Santa monica, Los angeles</p>
-            </div>
-          </div>
-        </li>
-        <li>
-        <span></span>
-          <div class="media">
-            <div class="d-flex" data-aos="fade-right" data-aos-delay="1000s">
-              <p>March 2017 to present</p>
-            </div>
-            <div class="media-body" data-aos="fade-left" data-aos-delay="1000s">
-              <h4>Colorlib</h4>
-              <p>Senior Web Developer <br />Santa monica, Los angeles</p>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-    </div>
-  </div>
-</section>
-<!--================End My Tabs Area =================-->
-<section class="languages"><div class="languages-section">
-  <div class="section-title text-center">
-    <h2>Languages I Know </h2>
-    <p>We’ve been working with the teams around the world.</p>
-  </div>
-  <div class="languages-container">
-    <div class="languages-group">
-      <div class="languages-item bootstrap"><img src="img/skills/bootstrap.png"></div>
-    </div>
-    <div class="languages-group">
-      <div class="languages-item git"><img src="img/skills/git.jpg" ></div>
-      <div class="languages-item cpp"><img src="img/skills/cpp.png" ></div>
-    </div>
-    <div class="languages-group">
-      <div class="languages-item css"><img src="img/skills/css.png" ></div>
-      <div class="languages-item html"><img src="img/skills/html.png" ></div>
-      <div class="languages-item js"><img src="img/skills/js.png" ></div>
-    </div>
-    <div class="languages-group">
-      <div class="languages-item python"><img src="img/skills/python.png" ></div>
-      <div class="languages-item react"><img src="img/skills/react.png" ></div>
-    </div>
-    <div class="languages-group">
-      <div class="languages-item sql"><img src="img/skills/sql.png" ></div>
-    </div>
-  </div>
-  <div class="sub-section-title text-center">
-    <h2>Tools I Use </h2>
-    <p>We’ve been working with the teams around the world.</p>
-  </div>
-  <div class="languages-container">
-    <div class="languages-group">
-    </div>
-    <div class="languages-group">
-      <div class="languages-item git"><img src="img/skills/figma.png" ></div>
-      <div class="languages-item cpp"><img src="img/skills/xd.png" ></div>
-    </div>
-    <div class="languages-group">
-      <div class="languages-item html"><img src="img/skills/canva.png" ></div>
-    </div>
-    <div class="languages-group">
-      <div class="languages-item python"><img src="img/skills/illustrator.png" ></div>
-      <div class="languages-item react"><img src="img/skills/photoshop.png" ></div>
-    </div>
-    <div class="languages-group">
-    </div>
-  </div>
-</div>
-</section>
-
-<section id="benefits" class="section section--gray">
-  <div class="container container--center">
-      <div class="section__header"><h2 class="section__heading">Benefits</h2></div>
-      <div class="vorteile-grid">
-          <div id="w-node-_3b6037ba-146a-d164-f20e-69666ecd1dcb-2d85b1e5" class="card cell ix--slide-up" style="opacity: 0;">
-              <h3 class="vorteile-cell__heading">Design and Development. <span class="u--gray">All from one hand.</span></h3>
-              <p class="vorteile-cell__copy">
-                  As a Webflow expert, I provide everything from one source - web design as well as web development. So you have one contact person for the whole process, from start to finish. And for development-only projects, my
-                  eye for design helps me to realize layouts the way they were meant to be.
-              </p>
-          </div>
-          <div id="w-node-_55e888ff-8c73-32f7-4cae-db633b80f872-2d85b1e5" class="card cell ix--slide-up--delay" style="opacity: 0;">
-              <div class="services-cell__header">
-                  <h3 class="vorteile-cell__heading">
-                      Stunning animations.<br />
-                      ‍<span class="u--gray">For the 🤯 factor.</span>
-                  </h3>
+            <!-- Form -->
+            <form class="mb-6">
+              <!-- Email -->
+              <div class="form-group">
+                <label class="sr-only" for="signInEmail"> Your email </label>
+                <input
+                  class="form-control"
+                  id="signInEmail"
+                  type="email"
+                  placeholder="Your email"
+                />
               </div>
-              <div class="services-video-wrap">
-                  <div class="services-video-container">
-                      <img
-                          src="https://assets.website-files.com/5f006c8ae8307069ecaa2c64/5f01d19e38630865c6fe847c_MacBook.png"
-                          alt="MacBook "
-                          loading="lazy"
-                          sizes="(max-width: 479px) 100vw, (max-width: 767px) 75vw, (max-width: 991px) 37vw, 19vw"
-                          srcset="
-                              https://assets.website-files.com/5f006c8ae8307069ecaa2c64/5f01d19e38630865c6fe847c_MacBook-p-500.png   500w,
-                              https://assets.website-files.com/5f006c8ae8307069ecaa2c64/5f01d19e38630865c6fe847c_MacBook-p-800.png   800w,
-                              https://assets.website-files.com/5f006c8ae8307069ecaa2c64/5f01d19e38630865c6fe847c_MacBook-p-1080.png 1080w,
-                              https://assets.website-files.com/5f006c8ae8307069ecaa2c64/5f01d19e38630865c6fe847c_MacBook.png        1884w
-                          "
-                          class="services-video__mac-img"
-                      />
-                      <div
-                          data-poster-url="https://assets.website-files.com/5f006c8ae8307069ecaa2c64/5f01cabaadc66df3b987467f_animation_large-poster-00001.jpg"
-                          data-video-urls="https://assets.website-files.com/5f006c8ae8307069ecaa2c64/5f01cabaadc66df3b987467f_animation_large-transcode.mp4,https://assets.website-files.com/5f006c8ae8307069ecaa2c64/5f01cabaadc66df3b987467f_animation_large-transcode.webm"
-                          data-autoplay="true"
-                          data-loop="true"
-                          data-wf-ignore="true"
-                          class="vorteile__bgvideo w-background-video w-background-video-atom"
-                      >
-                          <video
-                              autoplay=""
-                              loop=""
-                              style="background-image: url('https://assets.website-files.com/5f006c8ae8307069ecaa2c64/5f01cabaadc66df3b987467f_animation_large-poster-00001.jpg');"
-                              muted=""
-                              playsinline=""
-                              data-wf-ignore="true"
-                              data-object-fit="cover"
-                          >
-                              <source src="https://assets.website-files.com/5f006c8ae8307069ecaa2c64/5f01cabaadc66df3b987467f_animation_large-transcode.mp4" data-wf-ignore="true" />
-                              <source src="https://assets.website-files.com/5f006c8ae8307069ecaa2c64/5f01cabaadc66df3b987467f_animation_large-transcode.webm" data-wf-ignore="true" />
-                          </video>
-                      </div>
+
+              <!-- Password -->
+              <div class="form-group">
+                <div class="input-group inpit-group-merge">
+                  <input
+                    class="form-control"
+                    id="signInPassword"
+                    placeholder="Your password"
+                    type="password"
+                    aria-label="Your password"
+                    aria-describedby="signInPasswordCaption"
+                  />
+                  <div class="input-group-append">
+                    <a
+                      class="input-group-text text-decoration-none text-gray-500"
+                      id="signInPasswordCaption"
+                      data-toggle="password"
+                      href="#signInPassword"
+                    >
+                      <i class="fe fe-eye"></i>
+                    </a>
                   </div>
+                </div>
               </div>
+
+              <!-- Button -->
+              <button class="btn btn-block btn-primary">Sign in</button>
+            </form>
+
+            <!-- Link -->
+            <a class="font-size-sm" href="password-reset.html">
+              Forgot your password?
+            </a>
           </div>
-          <div id="w-node-_1304f47f-cc25-3958-c9e9-af60c4f21a38-2d85b1e5" class="card cell ix--slide-up" style="opacity: 0;">
-              <h3 class="vorteile-cell__heading">Fast development workflow. <span class="u--gray">Lightning fast.</span></h3>
-          </div>
-          <div id="w-node-a224dd0d-82a0-d7bf-f553-f2d461676e1a-2d85b1e5" class="card cell ix--slide-up" style="opacity: 0;">
-              <h3 class="vorteile-cell__heading">A powerful CMS. <span class="u--gray">For your content.</span></h3>
-              <p class="vorteile-cell__copy">Complete &amp; efficient control over your content. And with dedicated landing page CMS templates, your team can take marketing to the next level.</p>
-          </div>
-          <div id="w-node-abe99020-d716-dad6-02f0-30d16c33235a-2d85b1e5" class="card cell ix--slide-up--delay" style="opacity: 0;">
-              <h3 class="vorteile-cell__heading">The basics. <span class="u--gray">Of course.</span></h3>
-              <ul role="list" class="services-cell__basics-list w-list-unstyled">
-                  <li class="basics__list-item">
-                      <img
-                          src="https://assets.website-files.com/5f006c8ae8307069ecaa2c64/5f340a153d78657dae90a080_responsive.png"
-                          alt="Desktop and Phone Icon | Moritz Petersen Webflow Web Designer"
-                          loading="lazy"
-                          class="basics-list-item__img"
-                      />
-                      <div>Responsive design</div>
-                  </li>
-                  <li class="basics__list-item">
-                      <img
-                          src="https://assets.website-files.com/5f006c8ae8307069ecaa2c64/5f340a14e68d1a679d22fbdd_clean%20css.png"
-                          alt="Structure Icon | Moritz Petersen Webflow Web Designer"
-                          loading="lazy"
-                          class="basics-list-item__img"
-                      />
-                      <div>Clean CSS structure</div>
-                  </li>
-                  <li class="basics__list-item">
-                      <img
-                          src="https://assets.website-files.com/5f006c8ae8307069ecaa2c64/5f340a15e68d1a1d1222fbde_schnelle%20ladezeiten.png"
-                          alt="Lightning Icon | Moritz Petersen Webflow Web Designer"
-                          loading="lazy"
-                          class="basics-list-item__img"
-                      />
-                      <div>Fast loading times</div>
-                  </li>
-                  <li class="basics__list-item">
-                      <img src="https://assets.website-files.com/5f006c8ae8307069ecaa2c64/5f340a15b2ae3f2dc2d3090f_cloud.png" alt="Cloud Icon | Moritz Petersen Webflow Web Designer" loading="lazy" class="basics-list-item__img" />
-                      <div>Scalable hosting</div>
-                  </li>
-                  <li class="basics__list-item basics__list-item--last">
-                      <img src="https://assets.website-files.com/5f006c8ae8307069ecaa2c64/5f340865f047536359df73cb_seo.png" alt="Search Icon | Moritz Petersen Webflow Web Designer" loading="lazy" class="basics-list-item__img" />
-                      <div>SEO</div>
-                  </li>
-              </ul>
-          </div>
-          <div id="w-node-_756b7e42-4d12-1cf1-239d-bb6c702cb5c2-2d85b1e5" class="card cell ix--slide-up--delay" style="opacity: 0;">
-              <h3 class="vorteile-cell__heading">Perfected workflow. <span class="u--gray">For a smooth project flow.</span></h3>
-          </div>
-          <div id="w-node-_8b05d633-7817-9483-0f71-aa714a5c09ad-2d85b1e5" class="card cell ix--slide-up--delay" style="opacity: 0;">
-              <h3 class="vorteile-cell__heading">Latest web standards. <span class="u--gray">Standard.</span></h3>
-          </div>
-          <div id="w-node-_8be84687-f0ad-8a6f-ac58-b6bb52dd8268-2d85b1e5" class="card cell ix--slide-up" style="opacity: 0;">
-              <h3 class="vorteile-cell__heading">You're in good company. <span class="u--gray">Satisfied customers.</span></h3>
-              <div class="hero__logos">
-                  <a rel="noopener" href="https://www.haufe.com/" target="_blank" class="hero__logo w-inline-block">
-                      <img src="https://assets.website-files.com/5f006c8ae8307069ecaa2c64/5f298b3bb2a38458838cf5a2_Haufe_Logo_RGB_pos.svg" alt="Haufe Group Logo | Moritz Petersen Webflow Experte" width="110" loading="lazy" />
-                  </a>
-                  <a rel="noopener" href="https://www.nedgex.com/" target="_blank" class="hero__logo w-inline-block">
-                      <img src="https://assets.website-files.com/5f006c8ae8307069ecaa2c64/5f298b3bf4068009944b380f_nedgex.svg" alt="Nedgex Logo | Moritz Petersen Webflow Experte" width="80" loading="lazy" />
-                  </a>
-                  <a rel="noopener" href="https://www.userlane.com/" target="_blank" class="hero__logo w-inline-block">
-                      <img src="https://assets.website-files.com/5f006c8ae8307069ecaa2c64/5f298b3b4c06ecc9924a63c5_userlane.svg" width="120" alt="Userlane Logo | Moritz Petersen Webflow Experte" loading="lazy" />
-                  </a>
-              </div>
-          </div>
+        </div>
       </div>
-  </div>
-</section>
+    </div>
 
-<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Sign up -->
+    <div
+      class="modal fade"
+      id="modalSignUp"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalSignUpHeading"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <!-- Close -->
+            <button
+              class="modal-close close"
+              data-dismiss="modal"
+              type="button"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">
+                <i class="fe fe-x"></i>
+              </span>
+            </button>
 
-         
-<script
-  src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=5f006c8ae8307069ecaa2c64"
-  type="text/javascript"
-  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-  crossorigin="anonymous"
-></script>
-<script src="https://assets.website-files.com/5f006c8ae8307069ecaa2c64/js/moritz-petersen.7f06d9ff3.js" type="text/javascript"></script>
+            <!-- Heading -->
+            <h1 class="mb-4" id="modalSignUpHeading">Sign Up</h1>
+
+            <!-- Text -->
+            <p>
+              Create beautiful marketing websites in hours instead of weeks.
+            </p>
+
+            <!-- Form -->
+            <form class="mb-6">
+              <!-- Email -->
+              <div class="form-group">
+                <label class="sr-only" for="signUpEmail"> Your email </label>
+                <input
+                  class="form-control"
+                  id="signUpEmail"
+                  type="email"
+                  placeholder="Your email"
+                />
+              </div>
+
+              <!-- Password -->
+              <div class="form-group">
+                <div class="input-group inpit-group-merge">
+                  <input
+                    class="form-control"
+                    id="signUpPassword"
+                    placeholder="Your password"
+                    type="password"
+                    aria-label="Your password"
+                    aria-describedby="signUpPasswordCaption"
+                  />
+                  <div class="input-group-append">
+                    <a
+                      class="input-group-text text-decoration-none text-gray-500"
+                      id="signUpPasswordCaption"
+                      data-toggle="password"
+                      href="#signUpPassword"
+                    >
+                      <i class="fe fe-eye"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Button -->
+              <button class="btn btn-block btn-primary">Sign up</button>
+            </form>
+
+            <!-- Link -->
+            <small class="text-muted">
+              Already have an account? <a href="sign-in.html">Login</a>
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Password reset -->
+    <div
+      class="modal fade"
+      id="modalPasswordReset"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalPasswordResetHeading"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <!-- Close -->
+            <button
+              class="modal-close close"
+              data-dismiss="modal"
+              type="button"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">
+                <i class="fe fe-x"></i>
+              </span>
+            </button>
+
+            <!-- Heading -->
+            <h1 class="display-4 mb-4" id="modalPasswordResetHeading">
+              Password reset
+            </h1>
+
+            <!-- Text -->
+            <p class="text-muted">Enter your email to reset your password.</p>
+
+            <!-- Form -->
+            <form class="mb-6">
+              <!-- Email -->
+              <div class="form-group">
+                <label class="sr-only" for="passwordResetEmail">
+                  Your email
+                </label>
+                <input
+                  class="form-control"
+                  id="passwordResetEmail"
+                  type="email"
+                  placeholder="Your email"
+                />
+              </div>
+
+              <!-- Button -->
+              <button class="btn btn-block btn-primary">Reset password</button>
+            </form>
+
+            <!-- Text -->
+            <small class="text-muted">
+              Remember your password? <a href="sign-in.html">Log in</a>.
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sale -->
+    <div
+      class="modal fade"
+      id="modalSale"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalSaleHeading"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <!-- Close -->
+            <button
+              class="modal-close close"
+              data-dismiss="modal"
+              type="button"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">
+                <i class="fe fe-x"></i>
+              </span>
+            </button>
+
+            <!-- Image -->
+            <img
+              class="img-fluid mb-4 mt-n11"
+              src="assets/img/illustrations/illustration-4.png"
+              alt="..."
+            />
+
+            <!-- Heading -->
+            <h1 class="mb-4" id="modalSaleHeading">30 Day Free Trial</h1>
+
+            <!-- Text -->
+            <p class="text-muted">
+              We’ll help you get started by getting you guides and all the basic
+              informaiton.
+            </p>
+
+            <!-- Form -->
+            <form class="mb-6">
+              <!-- Email -->
+              <div class="form-group">
+                <label class="sr-only" for="saleModalEmail"> Your email </label>
+                <input
+                  class="form-control"
+                  id="saleModalEmail"
+                  type="email"
+                  placeholder="Your email"
+                />
+              </div>
+
+              <!-- Button -->
+              <button class="btn btn-block btn-primary">Start Trial</button>
+            </form>
+
+            <!-- Text -->
+            <small class="text-muted">
+              <a class="text-reset" data-dismiss="modal" href="#!"
+                >No thanks, I hate free stuff.</a
+              >
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-lg">
+        <!-- Brand -->
+        <a class="navbar-brand d-lg-none" href="index-2.html">A S T H A</a>
+
+        <!-- Toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Navigation -->
+          <ul class="navbar-nav justify-content-end w-100">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="landingsDropdown"
+                href="#"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Home
+              </a>
+              
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="pagesDropdown"
+                href="#"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                About
+              </a>
+              
+            </li>
+          </ul>
+
+          <!-- Brand -->
+          <a class="navbar-brand d-none d-lg-block px-lg-6" href="index-2.html"
+            >A S T H A</a
+          >
+
+          <!-- Navigation -->
+          <ul class="navbar-nav justify-content-start w-100">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="accountDropdown"
+                href="#"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Work
+              </a>
+              
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="docsDropdown"
+                href="#"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                TechStack
+              </a>
+              
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- WELCOME -->
+    <!-- Home Page-->
+    <section
+      class="d-flex align-items-center position-relative bg-dark bg-size-cover bg-position-center min-vh-100 overflow-hidden pt-6 pb-lg-5"
+      style="background-color: #121212"
+    >
+      <div class="container-fluid pt-4 pb-5 py-lg-5">
+        <div class="row align-items-center py-3">
+          <div class="col-xl-6 col-lg-5 d-flex justify-content-end">
+            <div
+              class="pt-2 mx-auto mb-5 mb-lg-0 ms-lg-0 me-xl-7 text-center text-lg-start"
+              style="max-width: 495px"
+            >
+              <h1 class="display-4 text-light pb-2">
+                <h4 data-aos="rotate-c" data-aos-duration="1000" data-aos-easing="ease-in-sine">H E Y !  &#128516  I  A M </h4>
+                
+              </h1>
+              
+                <h1 data-aos="fade-right" style="color: #fff;"><span>Astha Garhewal</span></h1>
+                <h2 data-aos="fade-left" data-aos-delay="400" style="color:#fff">I am a <span style="color: aliceblue; font-family: 'Lobster';">Front-end Developer.</span></h2>
+
+                  
+            
+              
+              <hr class="hr-light mt-0 mb-5" />
+              <div class="row">
+                
+                
+               
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-7">
+            <div class="parallax ms-lg-n5" style="max-width: 920px">
+              <div class="parallax-layer position-relative" data-depth="0.1">
+                <img
+                  src="assets/img/demo/presentation/intro/layer01.png"
+                  alt="Layer"
+                />
+              </div>
+              <div class="parallax-layer" style="z-index: 2" data-depth="0.3">
+                <img
+                  src="assets/img/demo/presentation/intro/layer02.png"
+                  alt="Layer"
+                />
+              </div>
+              <div class="parallax-layer" data-depth="0.2">
+                <img
+                  src="assets/img/demo/presentation/intro/layer03.png"
+                  alt="Layer"
+                />
+              </div>
+              <div class="parallax-layer" style="z-index: 3" data-depth="0.1">
+                <img
+                  src="assets/img/demo/presentation/intro/layer04.png"
+                  alt="Layer"
+                />
+              </div>
+              <div class="parallax-layer" data-depth="0.15">
+                <img
+                  src="assets/img/demo/presentation/intro/layer05.png"
+                  alt="Layer"
+                />
+              </div>
+              <div class="parallax-layer" style="z-index: 4" data-depth="0.25">
+                <img
+                  src="assets/img/demo/presentation/intro/layer061.png"
+                  alt="Layer"
+                />
+              </div>
+              <div class="parallax-layer" data-depth="0.3">
+                <img
+                  src="assets/img/demo/presentation/intro/layer071.png"
+                  alt="Layer"
+                />
+              </div>
+              <div class="parallax-layer" data-depth="0.4">
+                <img
+                  src="assets/img/demo/presentation/intro/layer081.png"
+                  alt="Layer"
+                />
+              </div>
+              <div class="parallax-layer" data-depth="0.35">
+                <img
+                  src="assets/img/demo/presentation/intro/layer091.png"
+                  alt="Layer"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHAPE -->
+    <div class="position-relative">
+      <div class="shape shape-fluid-x shape-bottom text-white pb-18">
+        <div class="shape-img pb-9 pb-md-15">
+          <svg viewBox="0 0 100 50" preserveAspectRatio="none">
+            <path d="M0 0h100v25H75L25 50H0z" fill="currentColor" />
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- TASKS -->
+    <section class="pt-10 pt-md-12 bg-dark">
+      <div class="container-lg">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title text-center">
+              <h3 style="color: #fff; margin-bottom: 35px;">Have a glance at my projects</h3>
+            </div>
+            <!-- Decoration -->
+            <div
+              class="position-absolute top-center top-md-left text-warning mt-n8 ml-md-n8"
+            >
+              <svg
+                width="185"
+                height="186"
+                viewBox="0 0 185 186"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="2" cy="2" r="2" fill="currentColor" />
+                <circle cx="22" cy="2" r="2" fill="currentColor" />
+                <circle cx="42" cy="2" r="2" fill="currentColor" />
+                <circle cx="62" cy="2" r="2" fill="currentColor" />
+                <circle cx="82" cy="2" r="2" fill="currentColor" />
+                <circle cx="102" cy="2" r="2" fill="currentColor" />
+                <circle cx="122" cy="2" r="2" fill="currentColor" />
+                <circle cx="142" cy="2" r="2" fill="currentColor" />
+                <circle cx="162" cy="2" r="2" fill="currentColor" />
+                <circle cx="182" cy="2" r="2" fill="currentColor" />
+                <circle cx="2" cy="22" r="2" fill="currentColor" />
+                <circle cx="22" cy="22" r="2" fill="currentColor" />
+                <circle cx="42" cy="22" r="2" fill="currentColor" />
+                <circle cx="62" cy="22" r="2" fill="currentColor" />
+                <circle cx="82" cy="22" r="2" fill="currentColor" />
+                <circle cx="102" cy="22" r="2" fill="currentColor" />
+                <circle cx="122" cy="22" r="2" fill="currentColor" />
+                <circle cx="142" cy="22" r="2" fill="currentColor" />
+                <circle cx="162" cy="22" r="2" fill="currentColor" />
+                <circle cx="182" cy="22" r="2" fill="currentColor" />
+                <circle cx="2" cy="42" r="2" fill="currentColor" />
+                <circle cx="22" cy="42" r="2" fill="currentColor" />
+                <circle cx="42" cy="42" r="2" fill="currentColor" />
+                <circle cx="62" cy="42" r="2" fill="currentColor" />
+                <circle cx="82" cy="42" r="2" fill="currentColor" />
+                <circle cx="102" cy="42" r="2" fill="currentColor" />
+                <circle cx="122" cy="42" r="2" fill="currentColor" />
+                <circle cx="142" cy="42" r="2" fill="currentColor" />
+                <circle cx="162" cy="42" r="2" fill="currentColor" />
+                <circle cx="182" cy="42" r="2" fill="currentColor" />
+                <circle cx="2" cy="62" r="2" fill="currentColor" />
+                <circle cx="22" cy="62" r="2" fill="currentColor" />
+                <circle cx="42" cy="62" r="2" fill="currentColor" />
+                <circle cx="62" cy="62" r="2" fill="currentColor" />
+                <circle cx="82" cy="62" r="2" fill="currentColor" />
+                <circle cx="102" cy="62" r="2" fill="currentColor" />
+                <circle cx="122" cy="62" r="2" fill="currentColor" />
+                <circle cx="142" cy="62" r="2" fill="currentColor" />
+                <circle cx="162" cy="62" r="2" fill="currentColor" />
+                <circle cx="182" cy="62" r="2" fill="currentColor" />
+                <circle cx="2" cy="82" r="2" fill="currentColor" />
+                <circle cx="22" cy="82" r="2" fill="currentColor" />
+                <circle cx="42" cy="82" r="2" fill="currentColor" />
+                <circle cx="62" cy="82" r="2" fill="currentColor" />
+                <circle cx="82" cy="82" r="2" fill="currentColor" />
+                <circle cx="102" cy="82" r="2" fill="currentColor" />
+                <circle cx="122" cy="82" r="2" fill="currentColor" />
+                <circle cx="142" cy="82" r="2" fill="currentColor" />
+                <circle cx="162" cy="82" r="2" fill="currentColor" />
+                <circle cx="182" cy="82" r="2" fill="currentColor" />
+                <circle cx="2" cy="102" r="2" fill="currentColor" />
+                <circle cx="22" cy="102" r="2" fill="currentColor" />
+                <circle cx="42" cy="102" r="2" fill="currentColor" />
+                <circle cx="62" cy="102" r="2" fill="currentColor" />
+                <circle cx="82" cy="102" r="2" fill="currentColor" />
+                <circle cx="102" cy="102" r="2" fill="currentColor" />
+                <circle cx="122" cy="102" r="2" fill="currentColor" />
+                <circle cx="142" cy="102" r="2" fill="currentColor" />
+                <circle cx="162" cy="102" r="2" fill="currentColor" />
+                <circle cx="182" cy="102" r="2" fill="currentColor" />
+                <circle cx="2" cy="122" r="2" fill="currentColor" />
+                <circle cx="22" cy="122" r="2" fill="currentColor" />
+                <circle cx="42" cy="122" r="2" fill="currentColor" />
+                <circle cx="62" cy="122" r="2" fill="currentColor" />
+                <circle cx="82" cy="122" r="2" fill="currentColor" />
+                <circle cx="102" cy="122" r="2" fill="currentColor" />
+                <circle cx="122" cy="122" r="2" fill="currentColor" />
+                <circle cx="142" cy="122" r="2" fill="currentColor" />
+                <circle cx="162" cy="122" r="2" fill="currentColor" />
+                <circle cx="182" cy="122" r="2" fill="currentColor" />
+                <circle cx="2" cy="142" r="2" fill="currentColor" />
+                <circle cx="22" cy="142" r="2" fill="currentColor" />
+                <circle cx="42" cy="142" r="2" fill="currentColor" />
+                <circle cx="62" cy="142" r="2" fill="currentColor" />
+                <circle cx="82" cy="142" r="2" fill="currentColor" />
+                <circle cx="102" cy="142" r="2" fill="currentColor" />
+                <circle cx="122" cy="142" r="2" fill="currentColor" />
+                <circle cx="142" cy="142" r="2" fill="currentColor" />
+                <circle cx="162" cy="142" r="2" fill="currentColor" />
+                <circle cx="182" cy="142" r="2" fill="currentColor" />
+                <circle cx="2" cy="162" r="2" fill="currentColor" />
+                <circle cx="22" cy="162" r="2" fill="currentColor" />
+                <circle cx="42" cy="162" r="2" fill="currentColor" />
+                <circle cx="62" cy="162" r="2" fill="currentColor" />
+                <circle cx="82" cy="162" r="2" fill="currentColor" />
+                <circle cx="102" cy="162" r="2" fill="currentColor" />
+                <circle cx="122" cy="162" r="2" fill="currentColor" />
+                <circle cx="142" cy="162" r="2" fill="currentColor" />
+                <circle cx="162" cy="162" r="2" fill="currentColor" />
+                <circle cx="182" cy="162" r="2" fill="currentColor" />
+                <circle cx="2" cy="182" r="2" fill="currentColor" />
+                <circle cx="22" cy="182" r="2" fill="currentColor" />
+                <circle cx="42" cy="182" r="2" fill="currentColor" />
+                <circle cx="62" cy="182" r="2" fill="currentColor" />
+                <circle cx="82" cy="182" r="2" fill="currentColor" />
+                <circle cx="102" cy="182" r="2" fill="currentColor" />
+                <circle cx="122" cy="182" r="2" fill="currentColor" />
+                <circle cx="142" cy="182" r="2" fill="currentColor" />
+                <circle cx="162" cy="182" r="2" fill="currentColor" />
+                <circle cx="182" cy="182" r="2" fill="currentColor" />
+              </svg>
+            </div>
+
+            <!-- Stack -->
+            <div class="card-stack">
+              <!-- Card -->
+              <div class="card-stack-item mb-9">
+                <div class="card card-lg rounded overflow-hidden">
+                  <div class="row no-gutters">
+                    <div
+                      class="col-md order-md-1 d-flex align-items-end bg-primary"
+                    >
+                      <!-- Image -->
+                      <a href=#">
+                        <img
+                          class="card-img-top"
+                          src="assets/video/5.gif"
+                          alt="..."
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="col-md-5 order-md-0 d-flex align-items-center bg-white"
+                    >
+                      <div class="card-body text-center">
+                        <!-- Icon -->
+                        <div class="icon text-primary-light mx-auto mb-4">
+                          <img src="assets/img/icons/swords.png"/>
+                        </div>
+
+                        <!-- Heading -->
+                        <h1 class="font-family-sans-serif mb-4 mt-auto">
+                          The Frontline Warriors
+                        </h1>
+
+                        <!-- Text -->
+                        <p>
+                          This website is made in recognition for the frontend warriors of the pandemic.
+                        </p>
+
+                        <!-- Link -->
+                        <!-- <a
+                          class="h6 text-uppercase text-decoration-none mt-auto"
+                          href="robo-advisor.html"
+                        >
+                          View Landing <i class="fe fe-arrow-right"></i>
+                        </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card -->
+              <div class="card-stack-item mb-9">
+                <div class="card card-lg rounded overflow-hidden">
+                  <div class="row no-gutters">
+                    <div
+                      class="col-md order-md-1 d-flex align-items-end bg-primary"
+                    >
+                      <!-- Image -->
+                      <a href="#">
+                        <img
+                          class="card-img-top"
+                          src="assets/video/4.gif"
+                          alt="..."
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="col-md-5 order-md-0 d-flex align-items-center bg-white"
+                    >
+                      <div class="card-body text-center">
+                        <!-- Icon -->
+                        <div class="icon text-primary-light mx-auto mb-4">
+                          <img src="assets/img/icons/programmer.png" />
+                        </div>
+
+                        <!-- Heading -->
+                        <h1 class="font-family-sans-serif mb-4 mt-auto">
+                          Girlscript Bilaspur
+                        </h1>
+
+                        <!-- Text -->
+                        <p>
+                          GirlScript is the fastest growing tech-community in India. It is a non-profit project brought to you by GirlScript Foundation to help beginners in technology. This website is made to connect people with same mindset and who wants to grow in field of technology.
+                        </p>
+
+                        <!-- Link -->
+                        <!-- <a
+                          class="h6 text-uppercase text-decoration-none mt-auto"
+                          href="analytics-saas.html"
+                        >
+                          View Landing <i class="fe fe-arrow-right"></i>
+                        </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card -->
+              <div class="card-stack-item mb-9">
+                <div class="card card-lg rounded overflow-hidden">
+                  <div class="row no-gutters">
+                    <div
+                      class="col-md order-md-1 d-flex align-items-end bg-primary"
+                    >
+                      <!-- Image -->
+                      <a href="e-commerce-platform.html">
+                        <img
+                          class="card-img-top"
+                          src="assets/img/screenshots/ui-elements/landing-e-commerce.jpg"
+                          alt="..."
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="col-md-5 order-md-0 d-flex align-items-center bg-white"
+                    >
+                      <div class="card-body text-center">
+                        <!-- Icon -->
+                        <div class="icon text-primary-light mx-auto mb-4">
+                          <img src="assets/img/icons/support.png" />
+                        </div>
+
+                        <!-- Heading -->
+                        <h1 class="font-family-sans-serif mb-4 mt-auto">
+                          Sahaay
+                        </h1>
+
+                        <!-- Text -->
+                        <p>
+                          A mobile application to help the needy the ones by donating them food and articles.
+                        </p>
+
+                        <!-- Link -->
+                        <!-- <a
+                          class="h6 text-uppercase text-decoration-none mt-auto"
+                          href="e-commerce-platform.html"
+                        >
+                          View Landing <i class="fe fe-arrow-right"></i>
+                        </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card -->
+              <div class="card-stack-item mb-9">
+                <div class="card card-lg rounded overflow-hidden">
+                  <div class="row no-gutters">
+                    <div
+                      class="col-md order-md-1 d-flex align-items-end bg-primary"
+                    >
+                      <!-- Image -->
+                      <a href="#">
+                       
+                        <img
+                          class="card-img-top"
+                          src="assets/video/1.gif"
+                          alt="..."
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="col-md-5 order-md-0 d-flex align-items-center bg-white"
+                    >
+                      <div class="card-body text-center">
+                        <!-- Icon -->
+                        <div class="icon text-primary-light mx-auto mb-4">
+                         
+                          <img src="assets/img/icons/feedback.png"/ height="64px" width="64px">
+                        </div>
+
+                        <!-- Heading -->
+                        <h1 class="font-family-sans-serif mb-4 mt-auto">
+                          Online Feedback System
+                        </h1>
+
+                        <!-- Text -->
+                        <p>
+                          Online Feedback system for College is generally used in the college to rate the faculties, universityand others based on the performance.
+                        </p>
+
+                        
+                        <!-- <a
+                          class="h6 text-uppercase text-decoration-none mt-auto"
+                          href="coworking.html"
+                        >
+                          View Landing <i class="fe fe-arrow-right"></i>
+                        </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card -->
+              <div class="card-stack-item mb-9">
+                <div class="card card-lg rounded overflow-hidden">
+                  <div class="row no-gutters">
+                    <div
+                      class="col-md order-md-1 d-flex align-items-end bg-primary"
+                    >
+                      <!-- Image -->
+                      <a href="#">
+                        <img
+                          class="card-img-top"
+                          src="assets/video/7.gif"
+                          alt="..."
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="col-md-5 order-md-0 d-flex align-items-center bg-white"
+                    >
+                      <div class="card-body text-center">
+                        <!-- Icon -->
+                        <div class="icon text-primary-light mx-auto mb-4">
+                          <img src="assets/img/icons/helmet.png" />
+                        </div>
+
+                        <!-- Heading -->
+                        <h1 class="font-family-sans-serif mb-4 mt-auto">
+                          Helmet Detection System
+                        </h1>
+
+                        <!-- Text -->
+                        <p>
+                          A system for detection of motorcyclist without helmet.
+                        </p>
+
+                        <!-- Link -->
+                        <!-- <a
+                          class="h6 text-uppercase text-decoration-none mt-auto"
+                          href="course.html"
+                        >
+                          View Landing <i class="fe fe-arrow-right"></i>
+                        </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card -->
+              <div class="card-stack-item mb-9">
+                <div class="card card-lg rounded overflow-hidden">
+                  <div class="row no-gutters">
+                    <div
+                      class="col-md order-md-1 d-flex align-items-end bg-primary"
+                    >
+                      <!-- Image -->
+                      <a href="#">
+                        <img
+                          class="card-img-top"
+                          src="assets/video/2.gif"
+                          alt="..."
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="col-md-5 order-md-0 d-flex align-items-center bg-white"
+                    >
+                      <div class="card-body text-center">
+                        <!-- Icon -->
+                        <div class="icon text-primary-light mx-auto mb-4">
+                          <img src="assets/img/icons/club.png"/>
+                        </div>
+
+                        <!-- Heading -->
+                        <h1 class="font-family-sans-serif mb-4 mt-auto">
+                          Developer Student Club, GGV
+                        </h1>
+
+                        <!-- Text -->
+                        <p>
+                          This website is made for Developer Student Club of our University, which helps the students to connect with us, learn from us and to participate in various other technical events.
+                        </p>
+
+                        <!-- Link -->
+                        <!-- <a
+                          class="h6 text-uppercase text-decoration-none mt-auto"
+                          href="hiring-agency.html"
+                        >
+                          View Landing <i class="fe fe-arrow-right"></i>
+                        </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card -->
+              <div class="card-stack-item mb-9">
+                <div class="card card-lg rounded overflow-hidden">
+                  <div class="row no-gutters">
+                    <div
+                      class="col-md order-md-1 d-flex align-items-end bg-primary"
+                    >
+                      <!-- Image -->
+                      <a href="mobile-chat-app.html">
+                        <img
+                          class="card-img-top"
+                          src="assets/video/3.gif"
+                          alt="..."
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="col-md-5 order-md-0 d-flex align-items-center bg-white"
+                    >
+                      <div class="card-body text-center">
+                        <!-- Icon -->
+                        <div class="icon text-primary-light mx-auto mb-4">
+                          <img src="assets/img/icons/hackathon.png" />
+                        </div>
+
+                        <!-- Heading -->
+                        <h1 class="font-family-sans-serif mb-4 mt-auto">
+                          Hackfest GGV
+                        </h1>
+
+                        <!-- Text -->
+                        <p>
+                          This website is made for conducting University level 48 hours long Hackathon.
+                        </p>
+
+                        <!-- Link -->
+                        <!-- <a
+                          class="h6 text-uppercase text-decoration-none mt-auto"
+                          href="mobile-chat-app.html"
+                        >
+                          View Landing <i class="fe fe-arrow-right"></i>
+                        </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card -->
+              <div class="card-stack-item mb-9">
+                <div class="card card-lg rounded overflow-hidden">
+                  <div class="row no-gutters">
+                    <div
+                      class="col-md order-md-1 d-flex align-items-end bg-primary"
+                    >
+                      <!-- Image -->
+                      <a href="#">
+                        <img
+                          class="card-img-top"
+                          src="assets/video/6.gif"
+                          alt="..."
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="col-md-5 order-md-0 d-flex align-items-center bg-white"
+                    >
+                      <div class="card-body text-center">
+                        <!-- Icon -->
+                        <div class="icon text-primary-light mx-auto mb-4">
+                          <img src="assets/img/icons/license-plate.png" />
+                        </div>
+
+                        <!-- Heading -->
+                        <h1 class="font-family-sans-serif mb-4 mt-auto">
+                          Automatic License Plate Detection System
+                        </h1>
+
+                        <!-- Text -->
+                        <p>
+                          Automatic number-plate recognition (ANPR; see also other names below) is a technology that uses optical character recognition on images to read vehicle registration plates to create vehicle location data.
+                        </p>
+
+                        <!-- Link -->
+                        <!-- <a
+                          class="h6 text-uppercase text-decoration-none mt-auto"
+                          href="software-automation.html"
+                        >
+                          View Landing <i class="fe fe-arrow-right"></i>
+                        </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us -->
+    <section class="position-relative" style="background-color: #121212;">
+      <div
+        class="position-absolute top-0 start-0 w-100 h-100 bg-primary opacity-65"
+      ></div>
+      <div class="position-relative zindex-5 container-fluid">
+        <div class="row align-items-center">
+          <div class="col-lg-7 col-md-7 order-md-2 overflow-hidden">
+            <div class="parallax me-n7 me-md-0" style="max-width: 1030px">
+              <img
+                class="d-block"
+                src="assets/img/demo/marketing-seo/hero/lines.png"
+                alt="Lines"
+              />
+              <div class="parallax-layer" style="z-index: 2" data-depth="0.13">
+                <img
+                  src="assets/img/demo/marketing-seo/hero/image.png"
+                  alt="Image"
+                />
+              </div>
+              <div class="parallax-layer" style="z-index: 3" data-depth="0.25">
+                <img
+                  src="assets/img/demo/marketing-seo/hero/shape-1.png"
+                  alt="Badge"
+                />
+              </div>
+              <div class="parallax-layer" data-depth="0.2">
+                <img
+                  src="assets/img/demo/marketing-seo/hero/shape-2.png"
+                  alt="Shape"
+                />
+              </div>
+              <div class="parallax-layer" style="z-index: 3" data-depth="0.5">
+                <img
+                  src="assets/img/demo/marketing-seo/hero/shape-3.png"
+                  alt="Badge"
+                />
+              </div>
+              <div class="parallax-layer" style="z-index: 3" data-depth="0.45">
+                <img
+                  src="assets/img/demo/marketing-seo/hero/shape-4.png"
+                  alt="Badge"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-5 pt-4 pb-5 py-md-5">
+            <div
+              class="mx-auto me-lg-4 ps-xl-3 order-md-1 text-center text-md-start"
+              style="max-width: 420px"
+            >
+              <h1 class="text-light mb-3">Let Me Induct Myself !</h1>
+              <p class="text-light fs-lg" data-aos="fade-left">
+                Hey, My name is Astha and I am a Web Developer with a penchant for Web designing, Looking for Cool job opportunities. <br>I am a proud geek with over one year of Experience, obsessed with designing. I specialize in Responsive web design, SEO and Visual Designs.<br> I have a passion for an organized workflow, designing visual images, and solving complex problems.<br> I love painting, sketching, travel and KFC ❤.
+              </p>
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
- 
+    <!--================Skills =================-->
+    <section class="languages">
+      <div class="languages-section">
+        <div class="section-title text-center">
+          <h2>Languages I Know</h2>
+          <p>I have a solid grasp of this languages.</p>
+        </div>
+        <div class="languages-container">
+          <div class="languages-group">
+            <div class="languages-item bootstrap">
+              <img data-aos="fade-right" src="assets/img/skills/bootstrap.png" />
+            </div>
+          </div>
+          <div class="languages-group">
+            <div class="languages-item git">
+              <img data-aos="fade-down-right" src="assets/img/skills/git.jpg" />
+            </div>
+            <div class="languages-item cpp">
+              <img data-aos="fade-up-right" src="assets/img/skills/cpp.png" />
+            </div>
+          </div>
+          <div class="languages-group">
+            <div class="languages-item css">
+              <img data-aos="fade-down" src="assets/img/skills/css.png" />
+            </div>
+            <div class="languages-item html">
+              <img data-aos="zoom-in" src="assets/img/skills/html.png" />
+            </div>
+            <div class="languages-item js">
+              <img data-aos="fade-up" src="assets/img/skills/js.png" />
+            </div>
+          </div>
+          <div class="languages-group">
+            <div class="languages-item python">
+              <img data-aos="fade-down-left" src="assets/img/skills/python.png" />
+            </div>
+            <div class="languages-item react">
+              <img data-aos="fade-up-left" src="assets/img/skills/react.png" />
+            </div>
+          </div>
+          <div class="languages-group">
+            <div class="languages-item sql">
+              <img data-aos="fade-left" src="assets/img/skills/sql.png" />
+            </div>
+          </div>
+        </div>
+        <div class="sub-section-title text-center">
+          <h2>Tools I Use</h2>
+          <p>For generating layouts and prototypes I use this tools.</p>
+        </div>
+        <div class="languages-container">
+          <div class="languages-group"></div>
+          <div class="languages-group">
+            <div class="languages-item git">
+              <img data-aos="fade-down-left" src="assets/img/skills/figma.png" />
+            </div>
+            <div class="languages-item cpp">
+              <img data-aos="fade-up-left" src="assets/img/skills/xd.png" />
+            </div>
+          </div>
+          <div class="languages-group">
+            <div class="languages-item html">
+              <img data-aos="zoom-in" src="assets/img/skills/canva.png" />
+            </div>
+          </div>
+          <div class="languages-group">
+            <div class="languages-item python">
+              <img data-aos="fade-down-right" src="assets/img/skills/illustrator.png" />
+            </div>
+            <div class="languages-item react">
+              <img data-aos="fade-up-right" src="assets/img/skills/photoshop.png" />
+            </div>
+          </div>
+          <div class="languages-group"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============Services========= -->
+    <section id="benefits" class="section section--gray" style="background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);">
+      <div class="container container--center">
+        <div class="section__header">
+          <h2 class="section__heading">Benefits<h5 style="color: #f2f2f2; word-spacing: 2px;">O F  &nbsp;   W O K R I N G  &nbsp;    W I T H &nbsp;     M E .</h5></h2>
+        </div>
+        <div class="vorteile-grid">
+          <div
+            id="w-node-_3b6037ba-146a-d164-f20e-69666ecd1dcb-2d85b1e5"
+            class="card cell ix--slide-up"
+            style="opacity: 0"
+          >
+            <h3 class="vorteile-cell__heading">
+              Web Designing and Development.
+              <span class="u--gray">All from one hand.</span>
+            </h3>
+            <p class="vorteile-cell__copy">
+              I can provide both Web Designing as well as Web development. 
+              So you have one contact person
+              for the whole process, from start to finish.
+              Designing helps me to visualize the layout of the 
+              website which will then useful for development work.
+            </p>
+          </div>
+          <div
+            id="w-node-_55e888ff-8c73-32f7-4cae-db633b80f872-2d85b1e5"
+            class="card cell ix--slide-up--delay"
+            style="opacity: 0"
+          >
+            <div class="services-cell__header">
+              <h3 class="vorteile-cell__heading">
+                Stunning prototypes.<br />
+                ‍<span class="u--gray">For the 🤯 factor.</span>
+              </h3>
+            </div>
+            <div class="services-video-wrap">
+              <div class="services-video-container">
+                
+                <img
+                  src="https://assets.website-files.com/5f006c8ae8307069ecaa2c64/5f01d19e38630865c6fe847c_MacBook.png"
+                  alt="MacBook "
+                  loading="lazy"
+                  sizes="(max-width: 479px) 100vw, (max-width: 767px) 75vw, (max-width: 991px) 37vw, 19vw"
+                  srcset="
+                    https://assets.website-files.com/5f006c8ae8307069ecaa2c64/5f01d19e38630865c6fe847c_MacBook-p-500.png   500w,
+                    https://assets.website-files.com/5f006c8ae8307069ecaa2c64/5f01d19e38630865c6fe847c_MacBook-p-800.png   800w,
+                    https://assets.website-files.com/5f006c8ae8307069ecaa2c64/5f01d19e38630865c6fe847c_MacBook-p-1080.png 1080w,
+                    https://assets.website-files.com/5f006c8ae8307069ecaa2c64/5f01d19e38630865c6fe847c_MacBook.png        1884w
+                  "
+                  class="services-video__mac-img"
+                />
+                <div
+                  data-poster-url="https://assets.website-files.com/5f006c8ae8307069ecaa2c64/5f01cabaadc66df3b987467f_animation_large-poster-00001.jpg"
+                  data-video-urls="https://assets.website-files.com/5f006c8ae8307069ecaa2c64/5f01cabaadc66df3b987467f_animation_large-transcode.mp4,https://assets.website-files.com/5f006c8ae8307069ecaa2c64/5f01cabaadc66df3b987467f_animation_large-transcode.webm"
+                  data-autoplay="true"
+                  data-loop="true"
+                  data-wf-ignore="true"
+                  class="vorteile__bgvideo w-background-video w-background-video-atom"
+                >
+                  <img
+                          class="card-img-top"
+                          src="assets/video/6.gif"
+                          alt="..."
+                        />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            id="w-node-_1304f47f-cc25-3958-c9e9-af60c4f21a38-2d85b1e5"
+            class="card cell ix--slide-up"
+            style="opacity: 0"
+          >
+            <h3 class="vorteile-cell__heading">
+              Improved and Rapid development workflow.
+              <span class="u--gray">For Software Development.</span>
+            </h3>
+          </div>
+          <div
+            id="w-node-a224dd0d-82a0-d7bf-f553-f2d461676e1a-2d85b1e5"
+            class="card cell ix--slide-up"
+            style="opacity: 0"
+          >
+            <h3 class="vorteile-cell__heading">
+              Creative Design. <span class="u--gray">Visually Appealing.</span>
+            </h3>
+            <p class="vorteile-cell__copy">
+              Providing design that is visually appealing, readable, easy to navigate,
+               and reinforces the purpose of the site while giving it a unified look and feel.
+            </p>
+          </div>
+          <div
+            id="w-node-abe99020-d716-dad6-02f0-30d16c33235a-2d85b1e5"
+            class="card cell ix--slide-up--delay"
+            style="opacity: 0"
+          >
+            <h3 class="vorteile-cell__heading">
+              The basics. <span class="u--gray">Of course.</span>
+            </h3>
+            <ul role="list" class="services-cell__basics-list w-list-unstyled">
+              <li class="basics__list-item">
+                <img
+                  src="assets/img/icons/responsive-design.png"
+                  alt="Desktop and Phone Icon | Moritz Petersen Webflow Web Designer"
+                  loading="lazy"
+                  class="basics-list-item__img"
+                />
+                <div>Responsive design</div>
+              </li>
+              <li class="basics__list-item">
+                <img
+                  src="assets/img/icons/css-3.png"
+                  alt="Structure Icon | Moritz Petersen Webflow Web Designer"
+                  loading="lazy"
+                  class="basics-list-item__img"
+                />
+                <div>Clean CSS structure</div>
+              </li>
+              <li class="basics__list-item">
+                <img
+                  src="assets/img/icons/friend-request.png"
+                  alt="Lightning Icon | Moritz Petersen Webflow Web Designer"
+                  loading="lazy"
+                  class="basics-list-item__img"
+                />
+                <div>User Friednly</div>
+              </li>
+              <li class="basics__list-item">
+                <img
+                  src="assets/img/icons/page-speed.png"
+                  alt="Cloud Icon | Moritz Petersen Webflow Web Designer"
+                  loading="lazy"
+                  class="basics-list-item__img"
+                />
+                <div>Optimized</div>
+              </li>
+              <li class="basics__list-item basics__list-item--last">
+                <img
+                  src="assets/img/icons/modern-house.png"
+                  alt="Search Icon | Moritz Petersen Webflow Web Designer"
+                  loading="lazy"
+                  class="basics-list-item__img"
+                />
+                <div>Modern Designs</div>
+              </li>
+            </ul>
+          </div>
+          <div
+            id="w-node-_756b7e42-4d12-1cf1-239d-bb6c702cb5c2-2d85b1e5"
+            class="card cell ix--slide-up--delay"
+            style="opacity: 0"
+          >
+            <h3 class="vorteile-cell__heading">
+              Smooth Project Management Workflow.
+              <span class="u--gray">For a smooth delivery.</span>
+            </h3>
+          </div>
+          <div
+            id="w-node-_8b05d633-7817-9483-0f71-aa714a5c09ad-2d85b1e5"
+            class="card cell ix--slide-up--delay"
+            style="opacity: 0"
+          >
+            <h3 class="vorteile-cell__heading">
+              Latest web designs. <span class="u--gray">Professional and Eligant.</span>
+            </h3>
+          </div>
+          <div
+            id="w-node-_8be84687-f0ad-8a6f-ac58-b6bb52dd8268-2d85b1e5"
+            class="card cell ix--slide-up"
+            style="opacity: 0"
+          >
+            <h3 class="vorteile-cell__heading">
+              You're in good hands.
+              <span class="u--gray"></span>
+            </h3>
+            <div class="hero__logos">
+              <a
+                rel="noopener"
+                href="#"
+                target="_blank"
+                class="hero__logo w-inline-block"
+              >
+    
+                <h3 class="u--gray">Quality Web Design</h3>
+              </a>
+              <a
+                rel="noopener"
+                href="#"
+                target="_blank"
+                class="hero__logo w-inline-block"
+              >
+              <h3 class="u--gray">Improved User Management</h3>
+              </a>
+              <a
+                rel="noopener"
+                href="#"
+                target="_blank"
+                class="hero__logo w-inline-block"
+              >
+              <h3 class="u--gray">UI/UX Designs</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================Social Icons============= -->
+    <div class="main-content">
+      <!-- Features (v5) -->
+      <section
+        class="slice slice-xl has-floating-items"
+        id="sct-call-to-action" style="background-image: url(assets/img/connect.png); background-position: center; background-repeat: no-repeat; background-size: cover;"
+      >
+        <a
+          href="#sct-call-to-action"
+          class="tongue tongue-up tongue-section-secondary"
+          data-scroll-to
+        >
+          <i class="fas fa-angle-up"></i>
+        </a>
+        <!-- <div class="container text-center">
+          <div class="row">
+            <div class="col-12">
+              <h1 style="color: #121212;">Connect with me</h1>
+            </div>
+          </div>
+        </div> -->
+        <div class="container floating-items">
+          <div class="icon-floating icon-lg floating">
+            <span></span>
+            <a href="https://in.linkedin.com/in/astha-garhewal-2891a3185">
+              <img
+              alt="Image placeholder"
+              src="assets/img/icons/linkedin.png"
+              class="svg-inject"
+            /></a>
+            
+          </div>
+          <div class="icon-floating icon-xl bg-white floating">
+            <span></span>
+            <a href="https://www.instagram.com/astha.garhewal/">
+              <img
+              alt="Image placeholder"
+              src="assets/img/icons/insta.png"
+              class="svg-inject"
+            />
+            </a>
+            
+          </div>
+          <div class="icon-floating icon-sm bg-white floating">
+            <span></span>
+            <a href="garhewal09@gmail.com">
+              <img
+              alt="Image placeholder"
+              src="assets/img/icons/gmail.png"
+              class="svg-inject"
+            />
+            </a>
+            
+          </div>
+          <div class="icon-floating icon-xl bg-white floating">
+            <span></span>
+            <a href="https://github.com/astha-garhewal">
+              <img
+              alt="Image placeholder"
+              src="assets/img/icons/github.png"
+              class="svg-inject"
+            />
+            </a>
+            
+          </div>
+          <div class="icon-floating icon-sm bg-white floating">
+            <span></span>
+            <a href="https://www.facebook.com/astha.garhewal.98">
+              <img
+              alt="Image placeholder"
+              src="assets/img/icons/fb.png"
+              class="svg-inject"
+            />
+            </a>
+            
+          </div>
+          <div class="icon-floating icon-sm bg-white floating">
+            <span></span>
+            <img
+              alt="Image placeholder"
+              src="assets/img/icons/dribbble.png"
+              class="svg-inject"
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ========================CONTACT ME========================== -->
+    <section class="contact">
+      <div class="container">
+        <div class="row">
+          <a href="contact.html"><h2>Contact Me <img src="assets/img/icons/arrow.png"></h2></a>
+          
+        </div>
+      </div>
+    </section>
+    <!-- JAVASCRIPT -->
+    <!-- Polyfills -->
+    <script src="../polyfill.io/v3/polyfill.minf25e.js?features=Array.prototype.find,Array.prototype.includes,Array.from,Object.entries,Promise,Object.assign"></script>
+
+    <!-- Libs JS -->
+
+    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="assets/libs/%40fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="assets/libs/%40popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="assets/libs/aos/dist/aos.js"></script>
+    <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 
-  <script>
-  var TxtRotate = function(el, toRotate, period) {
-  this.toRotate = toRotate;
-  this.el = el;
-  this.loopNum = 0;
-  this.period = parseInt(period, 10) || 2000;
-  this.txt = '';
-  this.tick();
-  this.isDeleting = false;
-};
+    <!-- Map -->
+    <script src="../api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js"></script>
 
-TxtRotate.prototype.tick = function() {
-  var i = this.loopNum % this.toRotate.length;
-  var fullTxt = this.toRotate[i];
+    <!-- Theme JS -->
+    <script src="assets/js/theme.min.js"></script>
 
-  if (this.isDeleting) {
-    this.txt = fullTxt.substring(0, this.txt.length - 1);
-  } else {
-    this.txt = fullTxt.substring(0, this.txt.length + 1);
-  }
+    <script
+      src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=5f006c8ae8307069ecaa2c64"
+      type="text/javascript"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://assets.website-files.com/5f006c8ae8307069ecaa2c64/js/moritz-petersen.7f06d9ff3.js"
+      type="text/javascript"
+    ></script>
 
-  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-  var that = this;
-  var delta = 300 - Math.random() * 100;
-
-  if (this.isDeleting) { delta /= 2; }
-
-  if (!this.isDeleting && this.txt === fullTxt) {
-    delta = this.period;
-    this.isDeleting = true;
-  } else if (this.isDeleting && this.txt === '') {
-    this.isDeleting = false;
-    this.loopNum++;
-    delta = 500;
-  }
-
-  setTimeout(function() {
-    that.tick();
-  }, delta);
-};
-
-window.onload = function() {
-  var elements = document.getElementsByClassName('txt-rotate');
-  for (var i=0; i<elements.length; i++) {
-    var toRotate = elements[i].getAttribute('data-rotate');
-    var period = elements[i].getAttribute('data-period');
-    if (toRotate) {
-      new TxtRotate(elements[i], JSON.parse(toRotate), period);
-    }
-  }
-  // INJECT CSS
-  var css = document.createElement("style");
-  css.type = "text/css";
-  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
-  document.body.appendChild(css);
-};
-  </script>
-
-  <!-- Vendor JS Files -->
-
-  <script src="js/aos.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/glightbox.min.js"></script>
-  <script src="js/swiper-bundle.min.js"></script>
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/popper.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-
-
-  <script src="js/main.js"></script>
-
-</body>
+    <script src="assets/js/purpose.core.js"></script>
+    <script src="assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="assets/js/purpose.js"></script>
+    <script src="assets/js/demo.js"></script>
+  </body>
 
 </html>
